@@ -1,0 +1,88 @@
+{
+  "name": "nelix/aergia",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/nelix/aergia",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/aergia",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "aergia",
+      "subhead": "An interactive guide to A9LH + Luma on your 3DS",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "aergia: An interactive guide to A9LH + Luma on your 3DS",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "nelix",
+          "repo": "aergia"
+        }
+      ],
+      "text": "v0.10.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<p>\n    <img src=\"./resources/logo.png\">\n    <br>\n    An interactive guide to A9LH + Luma on your 3DS\n</p>\n\n<h2>What is it?</h2>\n<p>AERGIA is an electron application that is meant as both a guide, and an automator for installing A9LH onto your 3DS. It will guide you through steps, as well as automate the creation and setup of your (micro)SD card.</p>\n<h2>WIP</h2>\n<p>This project is very much a work in progress. Styling and being pretty has come secondary to getting functionality working - although we would love your help in either case.</p>\n<p>It currently supports selecting your device model, region, version. It then goes and downloads everything you need for soundhax, the homebrew launcher, decrypt9 and downgrading to 2.1</p>\n<h2>Screenshots (Most likely outdated)</h2>\n<p><img src=\"./screenshots/1.png\">\n<img src=\"./screenshots/2.png\">\n<img src=\"./screenshots/3.png\">\n<img src=\"./screenshots/4.png\">\n<img src=\"./screenshots/5.png\"></p>\n<h2>Installation</h2>\n<p>Currently no prebuilt images are available as this is still very much WIP.</p>\n<p>You can clone the repo, run <code>npm install</code> (or use <code>yarn</code>) and then run <code>npm run dev</code></p>\n<h2>TODOs</h2>\n<h3>Styling</h3>\n<ul>\n<li>[x] branding</li>\n<li>[x] device images ???</li>\n<li>[x] flag/region images</li>\n<li>[ ] navigation foldout</li>\n<li>[ ] build proper grid elements</li>\n<li>[ ] UI elements and styling</li>\n<li>[ ] notification styling</li>\n<li>[ ] Style version select dropdown</li>\n<li>[ ] Fix image glitches/sizes</li>\n<li>[ ] Stop using hardcoded CSS everywhere?</li>\n<li>[ ] Fix layout on prompt (wifi/PG) and brick screens</li>\n</ul>\n<h3>Functional</h3>\n<ul>\n<li>[ ] Native app building</li>\n<li>[x] Model selection (+ selecting XL model for o3ds/n3ds)</li>\n<li>[x] Region selection</li>\n<li>[x] Version selection</li>\n<li>[x] Entrypoint detection based on model+region+version</li>\n<li>[ ] Support game-based primary entrypoints</li>\n<li>[x] Basic SD card selector</li>\n<li>[ ] Better SD card selector</li>\n<li>[x] Soundhax entrypoint file setup</li>\n<li>[ ] Soundhax entrypoint usage (before or after decrypt9+ctr screens?)</li>\n<li>[x] Decrypt9 setup</li>\n<li>[x] CTRTransfer firmware download</li>\n<li>[ ] Walkthrough for downgrading to 2.1 (+verify NAND dump?)</li>\n<li>[ ] A9LH step w/ file downloads</li>\n<li>[ ] Fix react components being still active when unmounted</li>\n<li>[ ] Injecting FBI + setup</li>\n<li>[ ] SD card cleanup</li>\n<li>[ ] &quot;What next?&quot;</li>\n<li>[ ] Credits page</li>\n</ul>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/nelix/aergia",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/nelix",
+          "text": "nelix"
+        }
+      ]
+    }
+  ]
+}
